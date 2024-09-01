@@ -1,4 +1,4 @@
-# Stort Protocol Validator Node Rehberi
+# Story Protocol Validator Node Rehberi
 
 ![image](https://github.com/user-attachments/assets/ceb92713-eb1c-4c95-98f1-ce4f969a4a7e)
 
@@ -149,7 +149,7 @@ story validator export --export-evm-key
 * [Faucet 3](https://faucet.quicknode.com/story)
 
 ### Private Key'inizi öğrenin
-#### Aşağıdki yol dizinine sunucunuza SFTP ile bağlanıp erişin ve privte keyinizi alın
+#### Aşağıdaki yol dizinine sunucunuza SFTP ile bağlanıp erişin ve private keyinizi alın
 
 ##### /root/.story/story/story/config/private_key.txt
 
