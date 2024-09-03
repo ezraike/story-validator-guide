@@ -129,7 +129,7 @@ sed -i -e "/^\[p2p\]/,/^\[/{s/^[[:space:]]*persistent_peers *=.*/persistent_peer
 sudo systemctl restart story
 ```
 
-### SNAPSHOT Devam Edelim
+### SNAPSHOT Devam Edelim (kodları tek tek girelim)
 ```bash
 sudo apt-get install wget lz4 aria2 pv -y
 
