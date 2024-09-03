@@ -41,6 +41,8 @@ tar -xzvf geth-linux-amd64-0.9.2-ea9f0d2.tar.gz
 sudo cp geth-linux-amd64-0.9.2-ea9f0d2/geth $HOME/go/bin/story-geth
 story-geth version
 ```
+![image](https://github.com/user-attachments/assets/b0e6af3c-a4eb-48e1-b5ed-679b239f0666)
+
 
 ### Story Setup
 ```bash
@@ -49,6 +51,7 @@ tar -xzvf story-linux-amd64-0.9.11-2a25df1.tar.gz
 sudo cp story-linux-amd64-0.9.11-2a25df1/story $HOME/go/bin/story
 story version
 ```
+![image](https://github.com/user-attachments/assets/97ae5ddc-533c-4339-9656-e4cf5f5753c5)
 
 ### Creating a Moniker
 #### Set your Moniker name
