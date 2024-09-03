@@ -118,11 +118,6 @@ sudo systemctl status story
 sudo journalctl -u story-geth -f -o cat
 ```
 
-### Synchronization Control
-```bash
-curl localhost:26657/status | jq
-```
-#### wait for catching_up to output “false”
 
 ### You can add PEER and SNAPSHOT for faster synchronization
 ```bash
@@ -158,6 +153,14 @@ mv $HOME/.story/priv_validator_state.json.backup $HOME/.story/story/data/priv_va
 sudo systemctl start story-geth
 sudo systemctl start story
 ```
+
+### Synchronization Control
+```bash
+curl localhost:26657/status | jq
+```
+#### wait for catching_up to output “false”
+
+
 ## Step 2: Validator Installation
 
 #### Don't install Validator until Catching Up is false!!
