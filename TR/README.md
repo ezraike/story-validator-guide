@@ -160,6 +160,8 @@ sudo systemctl start story
 
 ## Adım 2: Validator Kurma
 
+#### Catching Up durumu False olana kadar Validator kurulumuna geçmeyin!!
+
 ### Bir cüzdan oluşturma
 ```bash
 story validator export --export-evm-key --evm-key-path .env
