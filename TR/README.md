@@ -117,11 +117,6 @@ sudo systemctl status story
 sudo journalctl -u story-geth -f -o cat
 ```
 
-### Senkronizasyon Kontrolü
-```bash
-curl localhost:26657/status | jq
-```
-#### catching_up çıktısı “false” olmadan validator oluşturma aşamasına geçmeyin!
 
 ### Daha hızlı senkron olması için PEER ve SNAPSHOT kullanabilirsiniz
 ```bash
@@ -157,6 +152,11 @@ mv $HOME/.story/priv_validator_state.json.backup $HOME/.story/story/data/priv_va
 sudo systemctl start story-geth
 sudo systemctl start story
 ```
+### Senkronizasyon Kontrolü
+```bash
+curl localhost:26657/status | jq
+```
+#### catching_up çıktısı “false” olmadan validator oluşturma aşamasına geçmeyin!
 
 ## Adım 2: Validator Kurma
 
