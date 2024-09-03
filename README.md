@@ -160,6 +160,8 @@ sudo systemctl start story
 ```
 ## Step 2: Validator Installation
 
+#### Don't install Validator until Catching Up is false!!
+
 ### Create a wallet
 ```bash
 story validator export --export-evm-key --evm-key-path .env
