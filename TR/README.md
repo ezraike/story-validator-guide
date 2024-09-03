@@ -41,6 +41,7 @@ tar -xzvf geth-linux-amd64-0.9.2-ea9f0d2.tar.gz
 sudo cp geth-linux-amd64-0.9.2-ea9f0d2/geth $HOME/go/bin/story-geth
 story-geth version
 ```
+![image](https://github.com/user-attachments/assets/6981c9f1-27ff-441e-aca9-d1537a7a0a8f)
 
 ### Story Kurulumu
 ```bash
@@ -49,6 +50,7 @@ tar -xzvf story-linux-amd64-0.9.11-2a25df1.tar.gz
 sudo cp story-linux-amd64-0.9.11-2a25df1/story $HOME/go/bin/story
 story version
 ```
+![image](https://github.com/user-attachments/assets/10f44c14-292a-482c-aef8-f06a201e21a3)
 
 ### Moniker Oluşturma
 #### Moniker adınızı belirleyin
