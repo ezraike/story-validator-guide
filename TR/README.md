@@ -210,9 +210,10 @@ cat priv_validator_key.json | grep address
 ```bash
 https://testnet.story.explorers.guru/validator/<validator_address>
 ```
-#### Son olarak validator URL'nizi, validator explorer linkini ve oluşturduğunuz cüzdanın EVM adresini yetkilileri de etiketleyerek “dev-chat” kanalına gönderin. <3
+#### Son olarak validator URL'nizi, validator explorer linkini ve oluşturduğunuz cüzdanın EVM adresini yetkilileri de etiketleyerek “dev-chat” veya "validator-supports" kanalına gönderin. <3
 
-![image](https://github.com/user-attachments/assets/631bb70d-9a50-40bb-ac4c-ed9931d8b8d6)
+![image](https://github.com/user-attachments/assets/a544b752-dea2-440e-b3b2-6ee34a29e914)
+
 
 ### Validator Linkim: https://testnet.story.explorers.guru/validator/657B5A2BDDBD14FD207D1B318C634A29D2319AEB
 
