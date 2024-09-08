@@ -128,26 +128,26 @@ sudo systemctl restart story
 
 ### SNAPSHOT Devam Edelim (kodları tek tek girelim)
 ```bash
-sudo apt-get install wget lz4 aria2 pv -y
+sudo apt-get install wget lz4 -y
 
-aria2c -x 16 -s 16 https://vps6.josephtran.xyz/Story/Geth_snapshot.lz4 -o Geth_snapshot.lz4
-aria2c -x 16 -s 16 https://vps6.josephtran.xyz/Story/Story_snapshot.lz4 -o Story_snapshot.lz4
+wget -O geth_snapshot.lz4 https://snapshots.mandragora.io/geth_snapshot.lz4
+wget -O story_snapshot.lz4 https://snapshots.mandragora.io/story_snapshot.lz4
 
 sudo systemctl stop story-geth
 sudo systemctl stop story
 
-mv $HOME/.story/story/data/priv_validator_state.json $HOME/.story/priv_validator_state.json.backup
+sudo cp $HOME/.story/story/data/priv_validator_state.json $HOME/.story/priv_validator_state.json.backup
 
 sudo rm -rf $HOME/.story/geth/iliad/geth/chaindata
 sudo rm -rf $HOME/.story/story/data
 
-sudo mkdir -p $HOME/.story/geth/iliad/geth/chaindata
-lz4 -d Geth_snapshot.lz4 | pv | sudo tar xv -C $HOME/.story/geth/iliad/geth/
+lz4 -c -d geth_snapshot.lz4 | tar -x -C $HOME/.story/geth/iliad/geth
+lz4 -c -d story_snapshot.lz4 | tar -x -C $HOME/.story/story
 
-sudo mkdir -p $HOME/.story/story/data
-lz4 -d Story_snapshot.lz4 | pv | sudo tar xv -C $HOME/.story/story/
+sudo rm -v geth_snapshot.lz4
+sudo rm -v story_snapshot.lz4
 
-mv $HOME/.story/priv_validator_state.json.backup $HOME/.story/story/data/priv_validator_state.json
+sudo cp $HOME/.story/priv_validator_state.json.backup $HOME/.story/story/data/priv_validator_state.json
 
 sudo systemctl start story-geth
 sudo systemctl start story
