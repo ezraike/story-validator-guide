@@ -213,9 +213,10 @@ cat priv_validator_key.json | grep address
 ```bash
 https://testnet.story.explorers.guru/validator/<validator_address>
 ```
-#### Finally, send your validator URL, validator explorer link and the EVM address of the wallet you created to the “dev-chat” channel by tagging the authorities. <3
+#### Finally, send your validator URL, validator explorer link and the EVM address of the wallet you created to the “dev-chat” or "validator-support" channel by tagging the authorities. <3
 
-![image](https://github.com/user-attachments/assets/631bb70d-9a50-40bb-ac4c-ed9931d8b8d6)
+![image](https://github.com/user-attachments/assets/0866ff5d-3f79-45c1-9c9d-7b0048c45f42)
+
 
 
 ### My Validator Link: https://testnet.story.explorers.guru/validator/657B5A2BDDBD14FD207D1B318C634A29D2319AEB
